@@ -1,37 +1,136 @@
 body{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
 }
-header{
-  background-color: #048dc7a2;
-  position: fixed;
-  top: 0;
-  height: 50px;
-  width: 100%;
-}
-header ul{
-  
+/* General container styles */
+.container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  background-color: #2673b5;
+  height: 100vh;
+  margin: 0;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 100px;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar a:hover{
+  background-color: #70b3e3;
+  padding: 5px;
+  color: black;
+  border-radius: 25px;
+  animation-duration: 1s;
+}
+.logo {
+  background-color: #f9a12e;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.loginButton {
+  background-color: #fff;
+  color: #2673b5;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  flex: 1;
   justify-content: space-around;
   align-items: center;
-  list-style: none;
+  padding: 0 20px;
 }
-a{
-  text-decoration: none;
-  color: black;
-}
-footer{
-  color: black;
-  height: 40px;
-  bottom: 0;
-  z-index: 1000;
-  background-color: rgb(0, 166, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  width: 100%;
 
+.leftSection {
+  text-align: left;
+}
+
+.text {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+
+.therapistButton {
+  background-color: #fff;
+  color: #2673b5;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Right Section (Eye) styles */
+.rightSection {
+  position: relative;
+  width: 120px;
+  height: 80px;
+}
+
+.eye {
+  width: 100%;
+  height: 100%;
+  background-color: #f9d69b;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eyeBall {
+  width: 40%;
+  height: 40%;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.tear {
+  width: 15px;
+  height: 70px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  right: 200px;
+  left: 45%;
+  transform: rotate(180deg);
+}
+
+/* Footer styles */
+.footer {
+  margin: 20px;
+  color: #fff;
+  font-size: 14px;
 }
